@@ -22,6 +22,9 @@ public class Inscription extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
+		/*TODO
+		 * get le nom, le prenom & l'adresse et increment un id
+		 * redirect to accueil.jsp*/
 	}
 
 }

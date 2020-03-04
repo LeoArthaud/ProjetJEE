@@ -4,7 +4,10 @@
 	<form>
 		Nom : <input type="text" value="Du toto"> <br>
 		Prenom : <input type="text" value="Toto"> <br>
-		Adresse : <input type="text" value="4 rue du toto">	<br>
 	</form> 
-</div>
+	</div>
+
 <%@ include file="footer.jsp"%>
+
+<!-- Check si l'Utilisateur est admin oupas -->
+<!-- Et s'il est connecté sinon faut le renvoyé vers /inscription -->
