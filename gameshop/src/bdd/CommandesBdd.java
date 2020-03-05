@@ -59,7 +59,7 @@ public class CommandesBdd {
 	        ConnectDatabase();
 	        try {
 				     statement = connexion.createStatement();
-				     resultat = statement.executeQuery("select * from commandes order by nom;");
+				     resultat = statement.executeQuery("select * from commandes order by id;");
 					Commandes commandes = new Commandes();
 				while (resultat.next()) {
 					commandes.setId(resultat.getInt("id"));		            
@@ -80,7 +80,7 @@ public class CommandesBdd {
 			return maListeCommandes;}
 
 		//POST d'un jeu
-		public void AjouterJeux(int userID, /*ArrayList<Jeux> contenu,*/ Date createdAt) {
+		public void AjouterCommandes(int userID, /*ArrayList<Jeux> contenu,*/ Date createdAt) {
 		ConnectDatabase();
 		        try {
 		            PreparedStatement preparedStatement = connexion.prepareStatement("INSERT INTO commandes(userId, createdAt) VALUES (?,?,?);");

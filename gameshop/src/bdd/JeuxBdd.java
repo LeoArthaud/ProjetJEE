@@ -64,7 +64,7 @@ public class JeuxBdd {
 			     resultat = statement.executeQuery("select * from jeux order by nom;");
 			     Jeux jeux = new Jeux();
 			while (resultat.next()) {
-					jeux.setId(resultat.getInt("id"));		            
+				  jeux.setId(resultat.getInt("id"));		            
 		          jeux.setNom(resultat.getString("nom"));
 		          jeux.setEditeur(resultat.getString("editeur"));
 		          jeux.setCreateur(resultat.getString("createur"));

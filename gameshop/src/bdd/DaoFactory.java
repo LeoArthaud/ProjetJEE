@@ -1,5 +1,9 @@
 package bdd;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class DaoFactory {
     private String url;
     private String username;
@@ -30,7 +34,13 @@ public class DaoFactory {
    // *************************************************************************
    // Récupération des différents DAO ==> tables de la base de données
    // *************************************************************************
-    public NomsDao getNomDao() {
-        return new NomsDaoImpl(this);
+    public JeuxDao getJeuxDao() {
+        return new JeuxDaoImpl(this);
+    }
+    public UtilisateursDao getUtilisateursDao() {
+        return new UtilisateursDaoImpl(this);
+    }
+    public CommandesDao getCommandesDao() {
+        return new CommandesDaoImpl(this);
     }
 }
