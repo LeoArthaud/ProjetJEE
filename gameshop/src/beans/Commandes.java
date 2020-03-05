@@ -14,6 +14,9 @@ public class Commandes {
 	public int getId() {
 		return id;
 	}
+	public void setId(int id) {
+		this.id=id;
+	}
 	public int getUserId() {
 		return userId;
 	}
@@ -31,5 +34,9 @@ public class Commandes {
 	//stringB = dateFormat.format(date) ;
 	//createdAt = SimpleDateFormat.parse(stringB)
 	return createdAt;
+	 }
+	 
+	 public void setCreatedAt(Date createdAt) {
+		 this.createdAt = createdAt;
 	 }
 }

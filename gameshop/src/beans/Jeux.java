@@ -1,15 +1,21 @@
 package beans;
 
+import java.sql.Date;
+
 public class Jeux {
 	private int id; 
 	private String nom;
 	private String editeur;
 	private String createur;
-	private int sortie;
+	private Date sortie;
 	private float prix;
 	
 	public int getId() {
 		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	public String getNom() {
@@ -33,10 +39,10 @@ public class Jeux {
 		this.createur = createur;
 	}
 	
-	public int getSortie() {
+	public Date getSortie() {
 		return sortie;
 	}
-	public void setSortie(int sortie) {
+	public void setSortie(Date sortie) {
 		this.sortie = sortie;
 	}
 	
